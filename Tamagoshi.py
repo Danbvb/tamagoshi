@@ -4,11 +4,11 @@ import platform
 from tamagotchi.pet import Pet
 from tamagotchi.attributes import Attributes
 
-escolha = input("Escolha uma opção N para novo jogo ou S para sair do jogo: n")
+escolha = input("Escolha a opção 'N' para um NOVO jogo ou 'S' para SAIR do jogo: n")
 
 
 if escolha == "N" or "n":
-    tamagotchi_name = input('Coloque o nome do teu novo amigo: ')
+    tamagotchi_name = input('Coloque o nome do teu novo amiguinho: ')
     
     #instância de propriedade
     tamagotchi = Pet(tamagotchi_name)
@@ -63,7 +63,7 @@ if escolha == "N" or "n":
         time_count_sleep = time_count_sleep + TIME_RELOAD
         time_count_age = time_count_age + TIME_RELOAD 
     
-    print('e morreu')
+    print('MORREU :(')
     
     if escolha == "S" or "s":
         exit()
@@ -79,7 +79,7 @@ class Attributes:
         '''
 
         print("Estou com fome")
-        ask_user = input('alimentar?')
+        ask_user = input('Você deseja alimentar?')
 
         if ask_user == 'sim':
             self.pet.set_hungry(100)
@@ -90,7 +90,7 @@ class Attributes:
         possivel recaregar o valor da energia.
         '''
         print("Estou com sono")
-        ask_user = input("dormir? ")
+        ask_user = input("Você deseja colocar ele para dormir? ")
 
         if ask_user == 'sim':
             while self.pet.get_power() != 100:
@@ -116,6 +116,7 @@ class Attributes:
     Idade: {self.pet.get_age()}
     Energia: {self.pet.get_power()}
     ''')
+    
 class Pet:
     __name = ''
     __age = 0
