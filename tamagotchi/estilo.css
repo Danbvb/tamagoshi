@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#bloco{
+   display: flex;
+   justify-content: center;
+   margin-top: 5rem;
+   align-items: center;
+}
+
+.blocoimagem img{
+    width: 200px;
+    height: 200px;
+    margin-right: 2rem;
+    border-radius: 5px;
+    border: 1px solid #000;
+}
+
+.blocoimagem p{
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.lado h2{
+    font-size: 30px;
+}
+
+.barra{
+    width: 200px;
+    background: #9c0;
+    margin: 10px 0px;
+    border-radius: 5px;
+    padding: 5px 2px;
+    margin-right: 2rem;
+}
+
+.blocoBotao{
+    display: flex;
+    flex-direction: column;
+}
+
+.botao{
+    padding: 10px;
+    background-color: #b1d4b6;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 300ms;
+}
+
+.botao:hover{
+    background-color: #8f8f8f;
+}
+
+#mensagem {
+    color: red;
+}
+
+.background{
+    background-color: aquamarine;
+}
+
+.entrar{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 50px;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    flex-direction: column;
+}
+
+.menu a{
+    background-color: #9c0;
+    padding: 15px;
+    margin-bottom: 2rem;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 300ms;
+}
+
+.menu a:hover{
+    background-color: #8f8f8f;
+}
+
+.sair a{
+    text-decoration: none;
+    background-color: #9c0;
+    padding: 15px;
+    margin-bottom: 2rem;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 300ms;
+    margin-left: 3rem;
+}
+
+.sair a:hover {
+    background-color: #8f8f8f;
+}
