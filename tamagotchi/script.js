@@ -15,7 +15,7 @@ function Loop(time = 2) {
   social = social - parseInt(time) * 0.3;
   idade = idade + parseInt(time) * 0.5;
 
-  document.getElementById("fome").innerHTML = fome.toFixed(2) + "%";
+  document.getElementById("fome").innerHTML = fome.toFixed(1) + "%";
   document.getElementById("higiene").innerHTML = higiene.toFixed(1) + "%";
   document.getElementById("sono").innerHTML = sono.toFixed(1) + "%";
   document.getElementById("diversao").innerHTML = diversao.toFixed(1) + "%";
