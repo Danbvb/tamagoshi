@@ -116,3 +116,9 @@ body{
 .sair a:hover {
     background-color: #00b9bd;
 }
+
+#message{
+    text-align: center;
+    color: black;
+    margin-top: 2rem;
+}
