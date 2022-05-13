@@ -28,13 +28,16 @@ function Loop(time = 2) {
     sono <= 0 ||
     diversao <= 0 ||
     social <= 0 ||
-    idade >= 50
+    idade >= 80
   ) {
+    fome = 0;
+    higiene = 0;
+    sono = 0;
+    diversao = 0;
+    social = 0;
+    idade = 0;
     document.getElementById("pet").src = "img/preto.jpg";
-    // alert("SEU BONEQUINHO MORREU.");
-    // document.location.reload(true);
     document.getElementById("message").innerHTML = "Seu pet morreu";
-    callback(false);
   } else if (total > 400) {
     document.getElementById("pet").src = "img/azul.jpg";
   } else if (total > 300) {
