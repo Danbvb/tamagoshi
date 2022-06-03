@@ -49,14 +49,21 @@ function Loop(time = 2) {
 
 function Comer() {
   fome += 4;
+  diversao += 1;
 }
 
 function Banho() {
   higiene += 4;
+  diversao += 2;
 }
 
 function Dormir() {
   sono += 3;
+  sono += 3;
+  higiene -= 1;
+  fome -= 1;
+  social -= 1;
+  diversao -= 1;
 }
 
 function Brincar() {
@@ -65,6 +72,8 @@ function Brincar() {
 
 function Conversar() {
   social += 2;
+  social += 2;
+  diversao += 1;
 }
 
 function Start() {
