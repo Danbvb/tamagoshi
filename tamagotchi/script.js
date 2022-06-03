@@ -9,10 +9,10 @@ function Loop(time = 2) {
   var total = fome + higiene + sono + diversao + social;
 
   fome = fome - parseInt(time) * 1;
-  higiene = higiene - parseInt(time) * 0.25;
+  higiene = higiene - parseInt(time) * 0.6;
   sono = sono - parseInt(time) * 1;
-  diversao = diversao - parseInt(time) * 0.25;
-  social = social - parseInt(time) * 0.3;
+  diversao = diversao - parseInt(time) * 0.4;
+  social = social - parseInt(time) * 0.5;
   idade = idade + parseInt(time) * 0.5;
 
   document.getElementById("fome").innerHTML = fome.toFixed(1) + "%";
@@ -60,7 +60,7 @@ function Banho() {
 function Dormir() {
   sono += 3;
   sono += 3;
-  higiene -= 1;
+  higiene -= 4;
   fome -= 1;
   social -= 1;
   diversao -= 1;
